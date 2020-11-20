@@ -1,0 +1,41 @@
+package com.springdata.course.domain.dtos;
+
+import com.google.gson.annotations.Expose;
+
+import java.time.LocalDateTime;
+
+public class CustomerSeedDto {
+    @Expose
+    private String name;
+    @Expose
+    private LocalDateTime birthDate;
+    @Expose
+    private boolean isYoungDriver;
+
+    public CustomerSeedDto() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public LocalDateTime getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(LocalDateTime dateOfBirth) {
+        this.birthDate = dateOfBirth;
+    }
+
+    public boolean isYoungDriver() {
+        return isYoungDriver;
+    }
+
+    public void setYoungDriver(boolean youngDriver) {
+        isYoungDriver = youngDriver;
+    }
+}
